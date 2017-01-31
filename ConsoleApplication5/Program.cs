@@ -11,6 +11,8 @@ namespace ConsoleApplication5
         static void Main(string[] args)
         {
             Console.ReadLine();
+
+            //
         }
     }
 }
