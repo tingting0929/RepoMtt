@@ -11,7 +11,7 @@ namespace ConsoleApplication5
         static void Main(string[] args)
         {
             Console.ReadLine();//
-            5//
+            //vhnsg
         }
     }
 }
