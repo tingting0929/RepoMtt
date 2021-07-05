@@ -1,0 +1,29 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - '*'
+    exclude:
+    - ConsoleApplication1/*
+pr:
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - '*'
+    exclude:
+    - ConsoleApplication1/*
+
+steps:
+- powershell: |
+    echo "Build.SourceBranch=$env:BUILD_SOURCEBRANCH"
+    echo "Build.SourceBranchName=$env:BUILD_SOURCEBRANCHNAME"
+  displayName: 'Check build variables for the branch'
